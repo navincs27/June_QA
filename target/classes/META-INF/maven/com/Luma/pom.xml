@@ -32,8 +32,13 @@
       <scope>test</scope>
     </dependency>
     <dependency>
+<<<<<<< HEAD
     	<groupId>com.mavenPro</groupId>
     	<artifactId>maven</artifactId>
+=======
+    	<groupId>com</groupId>
+    	<artifactId>Facebook</artifactId>
+>>>>>>> e297b36ce32a491d42eacc96c2f1fc7b57cf8c30
     	<version>0.0.1-SNAPSHOT</version>
     </dependency>
   </dependencies>
