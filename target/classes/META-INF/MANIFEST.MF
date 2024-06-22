@@ -1,4 +1,13 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
 Build-Jdk-Spec: 21
+=======
+<<<<<<< HEAD
+Built-By: DANU SREE
+Build-Jdk: 17.0.5
+=======
+Build-Jdk-Spec: 17
+>>>>>>> 77819889ef6a233d1ac9c13c7f80a508a9b0873e
+>>>>>>> 1f6ade2256cf7e6fe27f0ff853e4b7abfaea5bb9
 Created-By: Maven Integration for Eclipse
 

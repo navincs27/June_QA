@@ -53,4 +53,24 @@ protected static void inputValues(WebElement element, WebDriver driver, String V
 			}
 }
 
+	
+	protected void passInput(WebDriver driver,WebElement element, String input) {
+		try {
+			new WebDriverWait(driver, Duration.ofSeconds(10))
+			.until(ExpectedConditions.elementToBeClickable(element))
+			.sendKeys(input);
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	protected String getText(WebDriver driver,WebElement element) {
+		try {
+			return element.getText();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
 }
