@@ -18,6 +18,15 @@ public class BaseClass {
 			e.printStackTrace();
 		}
 	}
+	
+	protected String getText(WebDriver driver,WebElement element) {
+		try {
+			return element.getText();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
 
 
 }
