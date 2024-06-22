@@ -34,9 +34,23 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		return driver;
 }
+
 protected static void launchURL(WebDriver driver , String url) {
 	try {
-		driver.get(url);
+		driver.get("https://magento.softwaretestingboard.com/");
 	} catch (Exception e) {
 	e.printStackTrace();
 		}
+
+}
+protected static void inputValues(WebElement element, WebDriver driver, String Value) {
+	try {
+		new WebDriverWait(driver,Duration.ofSeconds(10))
+		.until(ExpectedConditions.elementToBeClickable(element));
+		element.sendKeys(Value);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+}
+
+}
